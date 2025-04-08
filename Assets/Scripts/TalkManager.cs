@@ -20,7 +20,10 @@ public class TalkManager : MonoBehaviour
         talkData.Add(1000, new string[] { "안녕?:0", "이 곳에 처음 왔구나?:1" });
         talkData.Add(2000, new string[] { "여어.:1", "이 호수는 정말 아름답지?:0", "사실 이 호수에는 무언가의 비밀이 숨겨져있다고 해.:1"});
         talkData.Add(100, new string[] { "평범한 나무상자다." });
+        talkData.Add(200, new string[] { "평범한 나무상자다." });
+        talkData.Add(300, new string[] { "평범한 나무상자다." });
         talkData.Add(400, new string[] { "누군가 사용했던 흔적이 있는 책상이다." });
+        talkData.Add(500, new string[] { "돌." });
 
         profileData.Add(1000 + 0, profileArr[0]);
         profileData.Add(1000 + 1, profileArr[1]);
