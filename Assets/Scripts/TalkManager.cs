@@ -25,6 +25,9 @@ public class TalkManager : MonoBehaviour
         talkData.Add(400, new string[] { "누군가 사용했던 흔적이 있는 책상이다." });
         talkData.Add(500, new string[] { "돌." });
 
+        talkData.Add(10 + 1000, new string[] { "dkssud?:0", "hjkl;:1", "lllllll.:0" });
+        talkData.Add(11 + 2000, new string[] { ":1", " :0", ":1" });
+
         profileData.Add(1000 + 0, profileArr[0]);
         profileData.Add(1000 + 1, profileArr[1]);
         profileData.Add(1000 + 2, profileArr[2]);

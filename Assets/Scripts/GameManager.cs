@@ -5,6 +5,7 @@ using TMPro;
 public class GameManager : MonoBehaviour
 {
     public TalkManager talkManager;
+    public QuestManager questManager;
     public GameObject talkPanel;
     public Image profileImg;
     public TextMeshProUGUI talkText;
@@ -22,12 +23,14 @@ public class GameManager : MonoBehaviour
     }
     void Talk(int id, bool isNpc)
     {
-        string talkData = talkManager.GetTalk(id,talkIndex);
+        int questTalkIndex = questManager.GetQuestTalkIndex(id);
+        string talkData = talkManager.GetTalk(id + questTalkIndex,talkIndex);
 
         if(talkData == null)
         {
             talkIndex = 0;
             isAction = false;
+            Debug.Log(questManager.CheckQuest(id));
             return;
         }
         if (isNpc)
